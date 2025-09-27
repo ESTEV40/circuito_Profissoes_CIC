@@ -3,6 +3,10 @@
 @import url(./bemvindo.css);
 @import url(./entidades.css);
 
+html{
+    scroll-behavior: smooth;
+}
+
 /* Estilos Gerais e Reset */
 *{
     margin: 0;

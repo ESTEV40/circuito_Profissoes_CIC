@@ -28,6 +28,10 @@
     gap: 30px;
 }
 
+.entidades-container a{
+    text-decoration: none;
+}
+
 /* 2. Estilo do Card da Entidade (o quadrado) */
 .entidade-card {
     background-color: var(--h1-main);
@@ -70,16 +74,18 @@
 
 /* Responsividade para telas mobile */
 @media (max-width: 768px) {
-    .entidades-container {
-        flex-direction: column;
-    }
 
-    
+    .entidades-container {
+        /* flex-direction: column;
+        justify-content: center;
+        align-items: center; */
+        /* não ta do jeito que quero ainda */
+    }
 
     .entidade-card {
         width: 80%;
-        max-width: 350px;
-        height: 250px; 
+        width: 350px;
+        height: 250px;
     }
 
     .entidades h2{
