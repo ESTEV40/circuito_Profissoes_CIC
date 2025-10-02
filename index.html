@@ -3,47 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="./images/logo1.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <title>Stand de CIC</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li class="logo"><a href="#bemvindo"><img src="./images/logo.png" alt="Logo do Colegiado de Ciência da Computação da UESC"></a></li>
-                <li class="contato"><a href="#entidades" class="btns-nav">Nossas Entidades</a></li>
-                <li class="duvida"><a href="#experimentos" class="btns-nav">Experimentos</a></li>
-                <li class="duvida"><a href="mailto:duvidas@exemplo.com" class="btns-nav">contato</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- header -->
+    <import path ="components/header.html"></import>
 
     <main>
+        <!-- bem vindos -->
         <div class="bemvindo section-container" id="bemvindo">
             <div class="text-content">
                 <h1>Bem Vindo Visitante!</h1>
-                <p>Sejam muito bem-vindos à Universidade Estadual de Santa Cruz (UESC) e, em especial, ao nosso stand do curso de Ciência da Computação!</p>
-                <p>É um prazer imenso receber vocês, estudantes do ensino médio, aqui no nosso campus para conhecer de perto as diversas áreas do conhecimento e, quem sabe, descobrir a profissão que vai transformar o futuro de cada um de vocês.</p>
-                <p>Este momento é único: é a oportunidade de sonhar, de se inspirar e de enxergar caminhos possíveis por meio da educação pública, gratuita e de qualidade. No nosso stand, vocês vão conhecer um pouco sobre o que é ser um profissional de Ciência da Computação, um curso que forma pessoas capacitadas para desenvolver soluções tecnológicas inovadoras que fazem parte do nosso cotidiano: desde aplicativos de celular, jogos, sistemas bancários e de saúde, até inteligência artificial, robótica, segurança digital, entre muitos outros.</p>
-                <p>Mas a Ciência da Computação não é só tecnologia. É também lógica, criatividade, inovação e, principalmente, impacto social. O profissional dessa área é fundamental para o avanço de todos os setores da sociedade — educação, saúde, agricultura, indústria, comércio e até o meio ambiente podem se beneficiar das soluções criadas com o uso da computação.</p>
+                <p>Sejam muito bem-vindos à Universidade Estadual de Santa Cruz (<strong>UESC</strong>) e, em especial, ao nosso stand do curso de <strong>Ciência da Computação</strong>!</p>
+                <p>Esse é o site <b>OFICIAL</b> do nosso Stand! Feito por nossa equipe de estudantes engajados em acolhe-lo.</p>
+                <p>É um prazer imenso receber vocês, estudantes do ensino médio, aqui no nosso campus para conhecer de perto as diversas áreas do conhecimento e, quem sabe, descobrir a profissão que vai transformar cada um de vocês.</p>
+                <p>Este é um momento para se inspirar nas oportunidades da educação pública e de qualidade. Em <strong>nosso stand</strong>, você descobrirá a Ciência da Computação como um curso que une <strong>programação, lógica, criatividade e inovação</strong> para formar profissionais capazes de criar as soluções tecnológicas que transformam nosso cotidiano.</p>
+                <br>
             </div>
 
             <div class="image-content">
-                <img src="./images/image.png" alt="Ilustração de tecnologia com elementos de programação e design">
+                <img src="./assets/EquipeCircuito.png" alt="Ilustração de tecnologia com elementos de programação e design">
             </div>
         </div>
 
+        <!-- entidades -->
         <div class="entidades section-container" id="entidades">
-            <h2>Nossas Entidades</h2>
+            <div class="box-text">
+                <h2>Entidades Importantes</h2>
+                <p>O curso de Ciência da Computação tem algumas entidades importantes dentro da UESC</p>
+            </div>
+
+            <div class="entidades-container">
+                <a href="https://www.uesc.br/proape/" target="_blank" rel="noopener noreferrer">
+                    <div class="entidade-card card1">
+                        <img src="./assets/proapelogo.png" alt="">
+                        <h3>PROAPE</h3>
+                        <p>Pró-Reitoria de Ações Afirmativas e Permanência Estudantil.</p>
+                    </div>
+                </a>
+
+                <a href="https://colcic.uesc.br/" target="_blank" rel="noopener noreferrer">
+                    <div class="entidade-card card2">
+                        <img src="./assets/Group 1 (1).png" alt="">
+                        <h3>COLCIC</h3>
+                        <p>Colegiado do curso de Ciência da Computação.</p>
+                    </div>
+                </a>
+
+                <a href="https://www.instagram.com/cacicuesc/" target="_blank" rel="noopener noreferrer">
+                    <div class="entidade-card card3">
+                        <img src="./assets/logocacic.jpeg" alt="">
+                        <h3>CACIC</h3>
+                        <p>Centro Acadêmico do curso de Ciência da Computação.</p>
+                    </div>
+                </a>
+
+            </div>
         </div>
 
-        <div class="experimentos section-container" id="experimentos">
+        <!-- experimentos -->
+        <section class="experimentos section-container" id="experimentos">
             <h2>Nossos Experimentos</h2>
+            <p>Nessa seção você verá todos os nossos experimentos que preparamos para você!</p>
+            <div class="experimentos-grid" id="experimentosGrid">
+                <!-- Card grid InnerHTML -->
         </div>
+        </section>
     </main>
 
-    <footer>
-        </footer>
+    <import path="components/footer.html"></import>
+        
+    <script src="./js/importcomponent.js"></script>
+    <script src="./js/experimentos.js"></script>
+    <script src=".js/experimentosSaibaMais"></script>
 </body>
 </html>

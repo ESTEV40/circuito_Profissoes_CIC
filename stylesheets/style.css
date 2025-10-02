@@ -1,0 +1,96 @@
+@import url(./vars.css);
+@import url(./header.css);
+@import url(./bemvindo.css);
+@import url(./entidades.css);
+@import url(./experimentos-card.css);
+@import url(./experimentosSaibaMais.css);
+@import url(./footer.css);
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Estilos Gerais e Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--azulPrimario);
+}
+
+body {
+    background-color: var(--brancoPrimario);
+    min-height: 100vh;
+}
+
+/* Estilo Padrão para todas as seções principais */
+.section-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 5%;
+}
+
+/* experimentos */
+main .experimentos {
+    flex-grow: 1;
+    background-color: var(--brancoPrimario);
+    color: #c62828;
+}
+
+/* media query para mobile */
+@media (max-width: 768px) {
+    .section-container {
+        height: auto;
+        min-height: 100vh;
+        padding: 4rem 1.5rem;
+        flex-direction: column;
+    }
+}
+@media (max-width: 768px) {
+
+    /* --- Títulos e Fontes Gerais --- */
+    h1 {
+        font-size: 2rem; /* Diminui o H1 */
+    }
+    h2 {
+        font-size: 1.6rem; /* Diminui o H2 */
+    }
+
+    /* --- Seção Bem Vindo --- */
+    .bemvindo {
+        flex-direction: column; /* Coloca o texto em cima da imagem */
+        text-align: center;
+    }
+
+    .bemvindo .text-content,
+    .bemvindo .image-content {
+        width: 100%; /* Faz ambos ocuparem a largura total */
+    }
+
+    .bemvindo .image-content img {
+        margin-top: 30px;
+    }
+
+
+    /* --- Seção Entidades --- */
+    .entidades-container {
+        flex-direction: column; /* Empilha os cards das entidades */
+        gap: 25px;
+    }
+
+    .entidade-card {
+        width: 90%; /* Ajusta a largura dos cards */
+        max-width: 350px;
+    }
+
+
+    /* --- Seção Experimentos --- */
+    .experimentos-grid {
+        /* Ajusta a grade para ter apenas uma coluna e ser mais flexível */
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+}
