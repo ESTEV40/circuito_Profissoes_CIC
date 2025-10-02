@@ -7,4 +7,13 @@
     --header: #b3bbfa;
     --white: #FFF;
     --p: #561f9d;
+
+    /* cores do colegiado */
+    --azulPrimario : #283A73;
+    --azulSecundario : #4561BD;
+    --amareloPrimario : #F0D400;
+    --amareloSecundario : #F0E63A;
+    --brancoPrimario: #E6EDFF;
+    --brancoSecundario : #FBFBFB;
+    --verdeComplementar : #419D78;
 }
