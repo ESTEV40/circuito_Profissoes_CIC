@@ -1,6 +1,6 @@
 [
     {
-        "nome" : "Programando Inteligencias Artificiais no LugoBots",
+        "nome" : "Programando Inteligências Artificiais no LugoBots",
         "descricao" : "O LugoBots é uma plataforma online em que equipes de estudantes programam bots (robôs virtuais) que jogam partidas de futebol de forma totalmente autônoma. Cada bot é controlado por código, e a equipe deve definir sua lógica de movimentação, posicionamento, passes e finalizações.<br><br> A proposta é mostrar, de maneira prática e divertida, como conceitos aprendidos ao longo do curso (como programação, geometria analítica, vetores e álgebra linear) podem ser aplicados em problemas reais de tomada de decisão e inteligência artificial. Além de atrair o interesse dos visitantes com uma simulação envolvente, o experimento abre espaço para discussões sobre estratégia, lógica e ciência de dados, conectando teoria e prática em um ambiente lúdico.",
         "tematica" : ["Jogos", "Inteligência", "Artificial", "Robótica"],
         "topicos" : "Programação e lógica de algoritmos, Geometria Analítica (posicionamento e direção de vetores), Álgebra Linear (operações com vetores)​,Inteligência Artificial (estratégias básicas de tomada de decisão), Física (velocidade, colisões e dinâmica de movimento), Cálculo (trajetórias e movimento)​",
