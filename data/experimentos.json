@@ -28,7 +28,7 @@
         "descricao": "Este experimento apresenta o funcionamento do algoritmo de ordenação Bubble Sort, um dos métodos mais conhecidos e utilizados para introduzir conceitos de algoritmos e complexidade computacional. O experimento consiste em demonstrar como uma sequência de números desordenados é organizada passo a passo por meio de comparações e trocas consecutivas.<br><br> implementação desenvolvida, é possível visualizar de forma interativa o processo de ordenação, tornando mais clara a lógica envolvida e facilitando a compreensão do algoritmo. A proposta é despertar a curiosidade dos visitantes ao mostrar como algo aparentemente simples, como organizar números em ordem crescente, pode envolver técnicas computacionais importantes e aplicáveis em diversos contextos.",
         "tematica": ["Programação e Desenvolvimento."],
         "topicos": "- Algoritmos de Ordenação, Programação Web (HTML, CSS, JavaScript), Lógica de Programação",
-        "midia":"https://youtu.be/uQCxBPTgzbA?si=kVDsmI1gHr5UBj03",
+        "midia":["https://youtu.be/uQCxBPTgzbA?si=kVDsmI1gHr5UBj03", "paollagiselle.github.io/bubblesort"],
         "responsaveis":["Paolla Giselle"]
     },
     {
