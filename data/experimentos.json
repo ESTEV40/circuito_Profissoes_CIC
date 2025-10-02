@@ -38,5 +38,22 @@
         "topicos": "Eletrônica, programação",
         "midia":["https://drive.google.com/drive/folders/14LFTzvCuLbefQn3svvWWe0B5UWnVhebi?usp=sharing","https://youtu.be/9JuQ_CL-gH4"],
         "responsaveis":["Ronaldo Ribeiro Porto Filho","Yuri Thomaz dos Santos Carvalho" ,"Samuel Ferreira Santos"]
+    },
+    {
+        "nome" : "Controlando a Música com Gestos",
+        "descricao": "Já imaginou ser um maestro da tecnologia, regendo suas músicas favoritas sem tocar em nada? Com o poder da Inteligência Artificial, isso se torna realidade!<br><br>Nosso experimento transforma sua mão no controle remoto definitivo. Através de uma câmera, um \"cérebro\" digital, treinado para reconhecer gestos, assiste aos seus movimentos. Feche o punho para pausar, levante o polegar para aumentar o volume ou deslize a mão no ar para trocar de faixa no Spotify.<br><br>Quer ir além? Desafie a IA e \"soletre\" o nome da sua banda favorita usando o alfabeto de Libras. O sistema irá decifrar suas mãos, buscar a música e tocá-la para você.<br><br>Não é mágica, é Ciência da Computação em ação. É a união entre a visão humana e a inteligência da máquina. Experimente o futuro da interação e mostre para a gente qual música você vai reger!",
+        "tematica" : ["IA e Programação"],
+        "topicos" : "Inteligência Artificial, mais especificamente Visão Computacional e Aprendizado de Máquina, para visualização e entendimento dos gestos. Também Lógica de Programação e Algoritmos para construção da conexão com a API.",
+        "midia" : [""],
+        "responsaveis" :["Cauan Mendonça Valadão"," Náthalie Lima Bomfim "]
+    }
+    ,
+    {
+        "nome" : "Torre de Hanói e Cubo Mágico – Desvendando a Lógica e os Algoritmos",
+        "descricao": "O experimento apresenta dois clássicos desafios da lógica e da computação: aTorre de Hanói e o Cubo Mágico. Ambos estimulam o raciocínio lógico, a análisedealgoritmos e a resolução de problemas — conceitos fundamentais na formaçãodeum cientista da computação. <br><br> A apresentação é voltada para alunos do ensino médio e temcomo objetivodespertar o interesse pela área da Computação, mostrando como o raciocínio lógicoe a criatividade podem ser aplicados na prática. <br><br>Na Torre de Hanói, o público verá como o pensamento recursivo ajuda a resolver umproblema passo a passo. Já no Cubo Mágico, os alunos conhecerão a aplicaçãodealgoritmos e padrões que levam à solução do quebra-cabeça. De forma interativa, será possível acompanhar os movimentos, compreender as estratégias e relacionar com o mundo da programação e da inteligência artificial.",
+        "tematica" : ["Jogos e algoritmo"],
+        "topicos" : "Lógica de Programação, Estruturas de Repetição, Algoritmos Recursivos,Inteligência Artificial, Resolução de Problemas, Pensamento Computacional, Matemática Discreta",
+        "midia" : ["https://youtu.be/Inm3Ie4aKI?si=RtDWXPa2M-xmiJtJ", "https://youtu.be/CLouA- TA6nc?si=3wjHRLaUGoszlPVG", "https://youtu.be/r9YguhkktOI?si=mozuMNKMpP-UcMGn"],
+        "responsaveis" :["Docente: Cesar Alberto Bravo Pariente", "Discentes: Caroline Almeida Paixão", "Gabriel Souza Santos", "AnaBeatriz Guerra Mello", "Pedro Henrique Gonçalves Freitas", "DalilaSantos Bonfim", "Maria Luiza OlivaSantos", "Nathan de Aguiar Costa", "Yuri Thomaz dos Santos Carvalho"]
     }
 ]
