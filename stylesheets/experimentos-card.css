@@ -1,0 +1,141 @@
+.experimentos {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.experimentos h2 {
+    font-size: 2.5em;
+    margin-bottom: 4px;
+    color: var(--azulPrimario);
+}
+
+/*CONTÊINER DOS CARDS */
+.experimentos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 25px; /* Espaço entre os cards (vertical e horizontal) */
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px;
+}
+
+
+/* --- CARD INDIVIDUAL (AJUSTADO) --- */
+.experimento-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #e9ecef;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+    padding: 20px; 
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Divisória interna do card (essencial para o layout) */
+.card-corpo {
+    display: flex;
+    flex-direction: column;
+    height: 100%; 
+}
+
+
+/* --- CABEÇALHO DO CARD (TÍTULO E TEMÁTICA) --- */
+.experimento-card ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    padding: 0;
+    list-style: none;
+    margin: 0 0 15px 0; 
+    gap: 15px;
+}
+
+/* Título (h2) */
+.experimento-card h2 {
+    font-size: 1.25rem; 
+    margin: 0; 
+    color: var(--azulPrimario);
+    line-height: 1.3;
+    word-break: break-word;
+}
+
+/* Temática (transformada em uma "tag") */
+.card-tematica {
+    background-color: #eef2ff; 
+    color: var(--azulSecundario); 
+    font-size: 0.75rem; 
+    font-weight: 600;
+    padding: 4px 8px;
+    border-radius: 5px;
+    white-space: nowrap; 
+    flex-shrink: 0; 
+}
+
+.experimento-card .responsaveis,
+.experimento-card .topicos {
+    font-size: 0.9rem; 
+    color: #666;
+    margin: 0 0 12px 0; 
+    line-height: 1.5;
+}
+
+.experimento-card .topicos {
+    display: -webkit-box;
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-link {
+    margin-top: auto; 
+    background-color: var(--azulSecundario); 
+    color: #ffffff;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-align: center;
+    transition: background-color 0.2s ease;
+}
+
+.card-link:hover {
+    background-color: var(--azulPrimario); /* Cor mais escura no hover */
+}
+
+@media (max-width: 768px) {
+
+    /* Diminui o espaço entre os cards no mobile */
+    .experimentos-grid {
+        gap: 20px;
+        padding: 15px; /* Diminui o padding da grade geral */
+    }
+
+    /* Deixa o card menos "apertado" no mobile */
+    .experimento-card {
+        padding: 20px; 
+    }
+
+    /* Ajusta o tamanho das fontes dentro do card */
+    .experimento-card h2 {
+        font-size: 1.15rem; /* Título um pouco menor */
+    }
+
+    .experimento-card .responsaveis,
+    .experimento-card .topicos {
+        font-size: 0.85rem; /* Textos de apoio menores */
+    }
+
+    .card-link {
+        padding: 10px 15px; /* Botão um pouco mais compacto */
+        font-size: 0.9rem;
+    }
+}

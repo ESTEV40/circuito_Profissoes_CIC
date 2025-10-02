@@ -1,0 +1,234 @@
+/* Estilização do Botão "Página Anterior" */
+
+.botao-paginaAnterior {
+    /* Layout e Alinhamento */
+    display: inline-flex; /* Usa flexbox para alinhar a seta e o texto facilmente */
+    align-items: center;  /* Centraliza verticalmente a seta com o texto */
+    
+    /* Aparência */
+    background-color: #f0f0f0; /* Um cinza bem claro de fundo */
+    color: #333; /* Cor do texto */
+    padding: 8px 16px; /* Espaçamento interno (vertical | horizontal) */
+    border-radius: 20px; /* Cantos bem arredondados para um visual moderno */
+    text-decoration: none; /* Remove o sublinhado padrão do link */
+    font-weight: 500; /* Peso da fonte */
+    font-size: 14px;
+    
+    /* Efeito de transição suave */
+    transition: background-color 0.2s ease-in-out, transform 0.2s ease;
+
+    /* Espaçamento para o conteúdo abaixo */
+    margin-bottom: 20px;
+}
+
+
+.botao-paginaAnterior:hover {
+    background-color: #e0e0e0; 
+    transform: translateY(-2px); 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+
+/* Container Principal */
+.experimento-SaibaMais-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding: 2rem 0;
+}
+
+/* Seção de Detalhes do Experimento */
+.experimento-detalhes {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border: 1px solid #e1e8ed;
+}
+
+/* Cabeçalho */
+.detalhes-cabecalho {
+    background: linear-gradient(0, var(--azulPrimario), var(--azulSecundario));
+    color: white;
+    padding: 2.5rem;
+}
+
+.detalhes-cabecalho ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem 0;
+}
+
+.detalhes-cabecalho li {
+    margin-bottom: 0.5rem;
+}
+
+.detalhes-cabecalho h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+    color: white;
+}
+
+.detalhes-cabecalho h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin: 0;
+    color: #ecf0f1;
+    opacity: 0.9;
+}
+
+.detalhes-cabecalho h3:not(li h3) {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 1.5rem 0 0.5rem 0;
+    color: white;
+}
+
+.detalhes-cabecalho p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 0;
+    color: #ecf0f1;
+}
+
+/* Corpo do Conteúdo */
+.detalhes-corpo {
+    padding: 2.5rem;
+}
+
+/* Títulos das seções */
+.detalhes-corpo h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--azulPrimario);
+    margin: 2rem 0 1rem 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--azulSecundario);
+}
+
+.detalhes-corpo h2:first-child {
+    margin-top: 0;
+}
+
+/* Descrição */
+.detalhes-corpo .descricao + p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--azulSecundario);
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+
+/* Tópicos */
+.detalhes-corpo .topicos + p {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--amareloPrimario);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+}
+
+/* Seção Visualize */
+.detalhes-corpo .visualiza {
+    color: var(--azulPrimario);
+    border-bottom-color: var(--azulSecundario);
+}
+
+/* Link da Mídia */
+.midia {
+    display: inline-block;
+    background: var(--verdeComplementar);
+    color: white;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(39, 174, 96, 0.3);
+    margin-top: 0.5rem;
+    margin-left: 15px;
+}
+
+.midia:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(39, 174, 96, 0.4);
+    background: linear-gradient(135deg, var(--verdeComplementar), #27ae60);
+}
+
+.midia span {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+}
+.midia p {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .experimento-SaibaMais-container {
+        padding: 1rem;
+    }
+    
+    .experimento-detalhes {
+        border-radius: 8px;
+    }
+    
+    .detalhes-cabecalho {
+        padding: 1.5rem;
+    }
+    
+    .detalhes-cabecalho h1 {
+        font-size: 2rem;
+    }
+    
+    .detalhes-cabecalho h3 {
+        font-size: 1.1rem;
+    }
+    
+    .detalhes-corpo {
+        padding: 1.5rem;
+    }
+    
+    .detalhes-corpo h2 {
+        font-size: 1.5rem;
+    }
+    
+    .midia {
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .detalhes-cabecalho h1 {
+        font-size: 1.7rem;
+    }
+    
+    .detalhes-corpo {
+        padding: 1rem;
+    }
+    
+    .detalhes-corpo h2 {
+        font-size: 1.3rem;
+    }
+    
+    .detalhes-corpo .descricao + p,
+    .detalhes-corpo .topicos + p {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+}
