@@ -5,7 +5,7 @@
         "tematica" : ["Jogos", "Inteligência", "Artificial", "Robótica"],
         "topicos" : "Programação e lógica de algoritmos, Geometria Analítica (posicionamento e direção de vetores), Álgebra Linear (operações com vetores)​,Inteligência Artificial (estratégias básicas de tomada de decisão), Física (velocidade, colisões e dinâmica de movimento), Cálculo (trajetórias e movimento)​",
         "midia" : "https://lugobots.ai/", 
-        "responsaveis": ["Enzo Fernandes Sarmento", "Henrique", "Thiago"]
+        "responsaveis": ["Enzo Fernandes Sarmento", "Henrique Souza Brito", "Thiago Alcântara"]
     },
     {
         "nome": "Simulador de Cenário de Robô em indústrias 4D",
