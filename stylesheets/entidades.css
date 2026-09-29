@@ -1,93 +1,100 @@
 /* entidades */
-.entidades {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 20px;
-}
-
-.entidades h2 {
-    font-size: 2.5em;
-    margin-bottom: 4px;
-    color: var(--azulPrimario);
-}
-
-.box-text{
-    margin-bottom: 40px;
-    color: var(--a-main);
-}
-
-
-.entidades-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 30px;
-}
-
-.entidades-container a{
-    text-decoration: none;
-}
-
-/* 2. Estilo do Card da Entidade (o quadrado) */
-.entidade-card {
-    background-color: var(--azulSecundario);
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    
-    width: 250px;
-    height: 250px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    overflow: hidden;
-    align-items: center;
-    padding: 0;
-    transition: transform 0.3s ease;
-}
-
-.entidade-card img{
+.entidade {
     width: 100%;
-    height: 70%;
-    object-fit: fill;
+    background-color: #fff;
+    padding: 3rem 8%;
+}
+
+.entidade h2 {
+    color: #1b2a56;
+    font-size: 25px;
+    font-family: 'Poppins', 'Inter', system-ui, sans-serif;
+}
+
+.entidade h2::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #EAA900;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.entidade > p {
+    color: #67707f;
+    padding: 8px 0;
+    line-height: 1.5;
+    font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* container dos cards */
+.entidade-container {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    justify-content: center;
+}
+
+/* card */
+.entidade-card {
+    width: 100%;
+    max-width: 320px;
+    background-color: #fff;
+    border: 1px solid #e1e4ec;
+    border-radius: 14px;
+    padding: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: 0.3s;
 }
 
 .entidade-card:hover {
-    transform: translateY(-10px);
-    cursor: pointer;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
-.entidade-card h3 {
-    margin: 8px;
-    color: var(--h2-main);
+/* logo */
+.entidade-card img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    flex-shrink: 0;
 }
 
-.entidade-card p {
-    color: var(--white);
-    font-size: 0.9em;
+/* informações */
+.entidade-info {
+    padding: 0;
 }
 
-/* Responsividade para telas mobile */
+.entidade-info h3 {
+    color: var(--azulSecundario);
+    font-size: 17px;
+    font-family: 'Poppins', 'Inter', system-ui, sans-serif;
+    margin-bottom: 0.3rem;
+}
+
+.entidade-info p {
+    color: #67707f;
+    font-size: 12px;
+    line-height: 1.4;
+    font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* responsivo */
 @media (max-width: 768px) {
-
-    /* .entidades-container {
-        /* flex-direction: column;
-        justify-content: center;
-        align-items: center; */
-        /* não ta do jeito que quero ainda */
-        /* } */
-
-    .entidade-card {
-        width: 80%;
-        width: 350px;
-        height: 250px;
+    .entidade {
+        padding: 3rem 1.5rem;
     }
 
-    .entidades h2{
-        font-size: 1.8rem;
+    .entidade-container {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1rem;
+    }
+
+    .entidade-card {
+        max-width: none;
     }
 }
