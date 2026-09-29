@@ -1,141 +1,291 @@
+/* SEÇÃO DE EXPERIMENTOS */
 .experimentos {
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 20px;
     width: 100%;
-    margin-top: 60px;
+    padding: 4rem 8%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.experimentos.section-container {
+    padding: 4rem 8%;
+    justify-content: flex-start;
+    align-items: stretch;
 }
 
 .experimentos h2 {
-    font-size: 2.5em;
-    margin-bottom: 4px;
-    color: var(--azulPrimario);
+    color: #1b2a56;
+    font-size: 25px;
+    font-family: 'Poppins', 'Inter', system-ui, sans-serif;
 }
 
-/*CONTÊINER DOS CARDS */
-.experimentos-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-    gap: 25px; /* Espaço entre os cards (vertical e horizontal) */
-    width: 100%;
-    max-width: 1200px; 
-    margin: 0 auto; 
-    padding: 20px;
-}
-
-
-/* --- CARD INDIVIDUAL (AJUSTADO) --- */
-.experimento-card {
-    background-color: #ffffff;
+.experimentos h2::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #EAA900;
+    margin-bottom: 10px;
     border-radius: 10px;
-    border: 1px solid #e9ecef;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
-    padding: 20px; 
-    text-align: left;
-    display: flex;
-    flex-direction: column;
 }
 
-/* Divisória interna do card (essencial para o layout) */
-.card-corpo {
-    display: flex;
-    flex-direction: column;
-    height: 100%; 
-}
-
-
-/* --- CABEÇALHO DO CARD (TÍTULO E TEMÁTICA) --- */
-.experimento-card ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start; 
-    padding: 0;
-    list-style: none;
-    margin: 0 0 15px 0; 
-    gap: 15px;
-}
-
-/* Título (h2) */
-.experimento-card h2 {
-    font-size: 1.25rem; 
-    margin: 0; 
-    color: var(--azulPrimario);
-    line-height: 1.3;
-    word-break: break-word;
-}
-
-/* Temática (transformada em uma "tag") */
-.card-tematica {
-    background-color: #eef2ff; 
-    color: var(--azulSecundario); 
-    font-size: 0.75rem; 
-    font-weight: 600;
-    padding: 4px 8px;
-    border-radius: 5px;
-    white-space: nowrap; 
-    flex-shrink: 0; 
-}
-
-.experimento-card .responsaveis,
-.experimento-card .topicos {
-    font-size: 0.9rem; 
-    color: #666;
-    margin: 0 0 12px 0; 
+.experimentos-intro {
+    color: #67707f;
+    font-family: 'Inter', system-ui, sans-serif;
     line-height: 1.5;
+    margin-bottom: 2rem;
 }
 
-.experimento-card .topicos {
-    display: -webkit-box;
-    -webkit-line-clamp: 3; 
-    -webkit-box-orient: vertical;
+
+/* CARROSSEL */
+
+.experimentos-carousel {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    width: 100%;
+}
+
+.experimentos-viewport {
+    width: 100%;
+    min-width: 0;
     overflow: hidden;
-    text-overflow: ellipsis;
 }
 
-.card-link {
-    margin-top: auto; 
-    background-color: var(--azulSecundario); 
-    color: #ffffff;
-    padding: 8px 12px;
+.experimentos-container {
+    display: flex;
+    gap: 2rem;
+    transition: transform 0.5s ease;
+}
+
+/* CARD */
+
+.experimento-card {
+    flex: 0 0 calc(50% - 1rem);
+    min-width: 0;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* PARTE DE CIMA */
+
+.projeto-topo {
+    background-color: #1b2a56;
+    padding: 2rem;
+    min-height: 150px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.projeto-topo::after {
+    content: "";
+    position: absolute;
+
+    width: 120px;
+    height: 120px;
+
+    border: 2px solid rgba(234, 169, 0, 0.18);
+    border-radius: 50%;
+
+    right: -45px;
+    top: -45px;
+}
+
+.projeto-numero {
+    color: #EAA900;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.projeto-topo h3 {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0;
+    font-family: 'Poppins', 'Inter', system-ui, sans-serif;
+}
+
+
+/* PARTE DE BAIXO */
+
+.projeto-conteudo {
+    padding: 2rem;
+    min-height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.projeto-conteudo p {
+    color: #67707f;
+    line-height: 1.5;
+    margin: 0 0 1.5rem;
+    font-family: 'Inter', system-ui, sans-serif;
+}
+
+
+/* BOTÃO */
+
+.projeto-btn {
+    width: fit-content;
+    padding: 0.7rem 1.2rem;
+    background-color: #4561BD;
+    color: white;
+    border-radius: 8px;
     text-decoration: none;
-    border-radius: 6px;
-    font-weight: 500;
+    font-family: 'Inter', system-ui, sans-serif;
     font-size: 0.9rem;
-    text-align: center;
-    transition: background-color 0.2s ease;
+    transition: 0.3s;
 }
 
-.card-link:hover {
-    background-color: var(--azulPrimario); /* Cor mais escura no hover */
+.projeto-btn:hover {
+    background-color: #283A73;
 }
+
+
+/* SETAS */
+
+.carousel-btn {
+    flex: 0 0 45px;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background-color: #1b2a56;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.carousel-btn:hover {
+    background-color: #4561BD;
+}
+
+
+/* INDICADORES */
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 1.5rem;
+}
+
+.indicator {
+    width: 8px;
+    height: 8px;
+    background-color: #c5cad8;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.indicator.ativo {
+    width: 25px;
+    border-radius: 10px;
+    background-color: #4561BD;
+}
+
+
+/* RESPONSIVO */
 
 @media (max-width: 768px) {
 
-    /* Diminui o espaço entre os cards no mobile */
-    .experimentos-grid {
-        gap: 20px;
-        padding: 15px; /* Diminui o padding da grade geral */
+    .experimentos {
+        position: relative;
+        padding: 3rem 1.5rem;
     }
 
-    /* Deixa o card menos "apertado" no mobile */
+    .experimentos h2,
+    .experimentos-intro {
+        width: 100%;
+    }
+
+    .experimentos-carousel {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        position: relative;
+        padding-bottom: 50px;
+    }
+
+    .experimentos-viewport {
+        width: 100%;
+    }
+
+    .experimentos-container {
+        gap: 0;
+    }
+
     .experimento-card {
-        padding: 20px; 
+        flex: 0 0 100%;
+        width: 100%;
     }
 
-    /* Ajusta o tamanho das fontes dentro do card */
-    .experimento-card h2 {
-        font-size: 1.15rem; /* Título um pouco menor */
+    .carousel-btn {
+        position: absolute;
     }
 
-    .experimento-card .responsaveis,
-    .experimento-card .topicos {
-        font-size: 0.85rem; /* Textos de apoio menores */
+    .carousel-btn:hover {
+        background-color: #1b2a56;
+        color: #fff;
     }
 
-    .card-link {
-        padding: 10px 15px; /* Botão um pouco mais compacto */
-        font-size: 0.9rem;
+    .experimentos-carousel {
+        position: relative;
+        padding-bottom: 55px;
+    }
+
+    /* seta anterior */
+    .carousel-btn.anterior {
+        left: calc(50% - 48px);
+    }
+
+    /* seta próxima */
+    .carousel-btn.proximo {
+        right: calc(50% - 48px);
+    }
+
+    .carousel-indicators {
+        display: none;
+    }
+
+    .carousel-btn {
+        position: absolute;
+        bottom: 0;
+        width: 38px;
+        height: 38px;
+        border: 1px solid #dfe3ec;
+        border-radius: 50%;
+        background-color: #fff;
+        color: #1b2a56;
+        font-size: 23px;
+        font-weight: 500;
+        box-shadow: 0 2px 8px rgba(27, 42, 86, 0.08);
+
+        z-index: 2;
+    }
+
+    .projeto-topo {
+        min-height: 130px;
+        position: relative;
+    }
+
+    .projeto-conteudo {
+        min-height: 180px;
     }
 }
