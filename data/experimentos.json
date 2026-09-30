@@ -6,7 +6,7 @@
         "topicos" : "Programação e lógica de algoritmos, Geometria Analítica (posicionamento e direção de vetores), Álgebra Linear (operações com vetores)​, Inteligência Artificial (estratégias básicas de tomada de decisão), Física (velocidade, colisões e dinâmica de movimento), Cálculo (trajetórias e movimento).​",
         "midia": [
             {
-            "nome": "Website",
+            "nome": "Site oficial - LugoBots",
             "url": "https://lugobots.ai/"
             }
         ],
@@ -19,11 +19,11 @@
         "topicos": "Programação e desenvolvimento em Java, Estrutura de dados (árvore binária de busca), Algoritmo de Busca em Profundidade (BFS),Técnicas de programação básicas em IA.",
         "midia": [
             {
-            "nome": "Youtube",
+            "nome": "Conheça um Centro de Distribuição Inteligente da Amazon",
             "url": "https://youtu.be/OtLHZk-HrA8?si=hIsek9atMC1Qh8nQ"
             },
             {
-            "nome": "Youtube",
+            "nome": "Robô móvel autônomo da Amazon",
             "url": "https://youtu.be/G-WdDeQ4TKw?si=PuHex81XemX2o9G6"
             }
         ],
@@ -36,11 +36,11 @@
         "topicos": "Jogos, Orientação Objeto, Java, Gamificação",
         "midia": [
             {
-            "nome": "Youtube",
+            "nome": "Jogo da Cobrinha Torta - Youtube",
             "url": "https://youtu.be/bs1MbekUZdw?si=NodQoTSsYvDZMfRP"
             },
             {
-            "nome": "Youtube",
+            "nome": "Jogo da Velha do Mal - Youtube",
             "url": "https://youtu.be/e6LrAGMlOWs?si=SY_oFBMIgd5lCFhQ"
             }
         ],
@@ -53,7 +53,7 @@
         "topicos": "Algoritmos de Ordenação, Programação Web (HTML, CSS, JavaScript), Lógica de Programação",
         "midia": [
             {
-            "nome": "Youtube",
+            "nome": "Bubble Sort - Youtube",
             "url": "https://youtu.be/uQCxBPTgzbA?si=kVDsmI1gHr5UBj03"
             },
             {
@@ -70,11 +70,11 @@
         "topicos": "Eletrônica, programação",
         "midia": [
             {
-            "nome": "Drive",
+            "nome": "Drive do projeto",
             "url": "https://drive.google.com/drive/folders/14LFTzvCuLbefQn3svvWWe0B5UWnVhebi?usp=sharing"
             },
             {
-            "nome": "Youtube",
+            "nome": "Carrinho feito com Arduino - Youtube",
             "url": "https://youtu.be/9JuQ_CL-gH4"
             }
         ],

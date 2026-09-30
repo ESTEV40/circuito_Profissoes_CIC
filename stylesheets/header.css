@@ -70,38 +70,72 @@
     color: #eaa900;
 }
 
-/* Responsividade */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--azulPrimario);
+    font-size: 28px;
+    cursor: pointer;
+}
 
+/* Responsividade */
 @media (max-width: 768px) {
 
     .site-header {
-        position: static;
-        min-height: auto;
+        position: sticky;
+        top: 0;
     }
 
     .site-header nav {
-        padding: 12px 5%;
-        flex-direction: column;
-        gap: 12px;
+        width: 100%;
+        padding: 10px 5%;
+        flex-direction: row;
+        gap: 0;
+    }
+
+    .brand {
+        flex: 1;
     }
 
     .uesc-logo {
-        width: 50px;
+        width: 45px;
         margin-right: 10px;
     }
 
     .colcic-logo {
-        width: 150px;
+        width: 130px;
+    }
+
+    .menu-toggle {
+        display: block;
     }
 
     .main-nav {
-        justify-content: center;
-        gap: 4px;
-        flex-wrap: wrap;
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+
+        background-color: var(--brancoSecundario);
+
+        flex-direction: column;
+        align-items: stretch;
+
+        padding: 10px 5%;
+
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+    }
+
+    .main-nav.ativo {
+        display: flex;
     }
 
     .main-nav a {
-        padding: 8px 12px;
-        font-size: 0.9rem;
+        display: block;
+        padding: 12px 8px;
+        border-bottom: 1px solid #eee;
+        font-size: 0.95rem;
     }
 }

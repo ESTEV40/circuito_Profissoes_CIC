@@ -36,6 +36,10 @@
     justify-content: center;
 }
 
+.entidade-container a {
+    text-decoration: none;
+}
+
 /* card */
 .entidade-card {
     width: 100%;
