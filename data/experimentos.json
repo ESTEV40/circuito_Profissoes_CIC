@@ -1,5 +1,29 @@
 [
     {
+    "nome": "Visão Computacional: Mapeamento Facial e Associação de Figurinhas",
+    "descricao": "O projeto foi desenvolvido para o Circuito de Profissões com o propósito de apresentar a Ciência da Computação de forma prática, interativa e acessível para alunos do ensino médio. A proposta é desmistificar a programação e a Inteligência Artificial, demonstrando como conceitos avançados de tecnologia podem ser aplicados em soluções dinâmicas do cotidiano.<br><br>O sistema utiliza a linguagem Python para processar, em tempo real, a captura de vídeo realizada por uma webcam. A partir da imagem do usuário, são aplicados algoritmos de detecção e mapeamento facial capazes de identificar a estrutura do rosto e extrair pontos estratégicos, como abertura dos olhos, curvatura do sorriso e posição das sobrancelhas. Com base nessas métricas visuais, o algoritmo analisa as proporções da face, identifica a expressão apresentada pelo usuário e seleciona automaticamente uma figurinha correspondente em um banco de dados previamente definido.<br><br>Como resultado, o projeto oferece uma demonstração interativa para o stand do curso, na qual os visitantes podem acompanhar, na tela do computador, a captura da câmera em tempo real e visualizar a figurinha associada à sua expressão facial.",
+    "tematica": [
+        "Visão Computacional",
+        "Inteligência Artificial",
+        "Processamento de Imagens",
+        "Interação Humano-Computador"
+    ],
+    "topicos": "Programação em Python, Visão Computacional, Processamento de Imagens, Detecção Facial, Mapeamento de Pontos Faciais, Reconhecimento de Expressões Faciais, Inteligência Artificial, Processamento de Vídeo em Tempo Real e Interação Humano-Computador.",
+    "midia": [
+        {
+            "nome": "Demonstração do projeto - YouTube",
+            "url": "https://youtu.be/wEUDZcu1K38"
+        }
+    ],
+    "responsaveis": [
+        "Cauan Mendonça Valadão",
+        "Victória Ândrea Santana da Silva",
+        "Guilherme Afonso Bongestab",
+        "André Nascimento Pardinho",
+        "Thainá Guimarães Santos"
+    ]
+    },
+    {
         "nome" : "Programando Inteligências Artificiais no LugoBots",
         "descricao" : "O LugoBots é uma plataforma online em que equipes de estudantes programam bots (robôs virtuais) que jogam partidas de futebol de forma totalmente autônoma. Cada bot é controlado por código, e a equipe deve definir sua lógica de movimentação, posicionamento, passes e finalizações.<br><br> A proposta é mostrar, de maneira prática e divertida, como conceitos aprendidos ao longo do curso (como programação, geometria analítica, vetores e álgebra linear) podem ser aplicados em problemas reais de tomada de decisão e inteligência artificial. Além de atrair o interesse dos visitantes com uma simulação envolvente, o experimento abre espaço para discussões sobre estratégia, lógica e ciência de dados, conectando teoria e prática em um ambiente lúdico.",
         "tematica" : ["Jogos", "Inteligência", "Artificial", "Robótica"],
