@@ -1,4 +1,27 @@
-[
+[   
+    {
+    "nome": "Projeção e Desenvolvimento de Braço Robótico com Controle Unity",
+    "descricao": "O projeto tem como objetivo desenvolver um braço robótico funcional utilizando Arduino e integrá-lo a uma engine de criação de jogos para realizar seu controle de forma virtual.<br><br>A proposta consiste na montagem de um braço mecânico independente, capaz de executar movimentos físicos, enquanto uma representação digital do mesmo dispositivo é desenvolvida na Unity. A partir dessa integração, busca-se sincronizar os movimentos realizados no ambiente virtual com os movimentos executados pelo braço robótico real.<br><br>O projeto demonstra, de forma prática, a integração entre hardware e software, explorando conceitos de robótica, programação, simulação e controle de dispositivos físicos por meio de ambientes virtuais.",
+    "tematica": [
+        "Robótica",
+        "Arduino",
+        "Unity",
+        "Automação"
+    ],
+    "topicos": "Programação com Arduino, Robótica, Controle de Servomotores, Integração entre Hardware e Software, Desenvolvimento em Unity, Simulação 3D, Automação, Sistemas Embarcados e Sincronização de Movimentos.",
+    "midia": [
+        {
+            "nome": "Vídeo de Demonstração",
+            "url": "https://drive.google.com/file/d/1x_0Ktl-LomDZ-3FFt-b9qBmk4hzvgWv2/view?usp=sharing"
+        }
+    ],
+    "responsaveis": [
+        "Rian Lucas",
+        "Raquel Santos",
+        "Samuel Santos",
+        "Olinoedson Senna"
+    ]
+    },
     {
     "nome": "Visão Computacional: Mapeamento Facial e Associação de Figurinhas",
     "descricao": "O projeto foi desenvolvido para o Circuito de Profissões com o propósito de apresentar a Ciência da Computação de forma prática, interativa e acessível para alunos do ensino médio. A proposta é desmistificar a programação e a Inteligência Artificial, demonstrando como conceitos avançados de tecnologia podem ser aplicados em soluções dinâmicas do cotidiano.<br><br>O sistema utiliza a linguagem Python para processar, em tempo real, a captura de vídeo realizada por uma webcam. A partir da imagem do usuário, são aplicados algoritmos de detecção e mapeamento facial capazes de identificar a estrutura do rosto e extrair pontos estratégicos, como abertura dos olhos, curvatura do sorriso e posição das sobrancelhas. Com base nessas métricas visuais, o algoritmo analisa as proporções da face, identifica a expressão apresentada pelo usuário e seleciona automaticamente uma figurinha correspondente em um banco de dados previamente definido.<br><br>Como resultado, o projeto oferece uma demonstração interativa para o stand do curso, na qual os visitantes podem acompanhar, na tela do computador, a captura da câmera em tempo real e visualizar a figurinha associada à sua expressão facial.",
