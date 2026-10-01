@@ -1,0 +1,132 @@
+/* dias e horários */
+.dias-horarios {
+    width: 100%;
+    background-color: #fff;
+    padding: 5rem 8%;
+}
+
+.dias-horarios h2::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: var(--gold);
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.dias-horarios h2 {
+    color: #1b2a56;
+    font-size: 25px;
+    font-family: 'Poppins', 'Inter', system-ui, sans-serif;
+    
+}
+
+.dias-horarios p{
+    color: #67707f;
+    text-align: justify;
+     padding: 8px 0;
+     line-height: 1.5;
+     font-family: 'Inter', system-ui, sans-serif;
+}
+
+.horarios-container {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.horario-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    flex: 1; /* largura flexível */
+
+    height: 180px; /* altura fixa */
+
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.dia-card {
+    background-color: #1b2a56;
+    padding: 1rem;
+    border-radius: 15px;
+
+    width: 90px;
+    min-width: 90px;
+    height: 150px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.dia-card span {
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+.dia-card span::after {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: var(--gold);
+    margin: 10px auto 0;
+    border-radius: 10px;
+}
+
+.horario-info {
+    flex: 1;
+}
+
+.horario-info p {
+    color: #67707f;
+    font-size: 13px;
+}
+
+.horario-info h3 {
+    color: #1b2a56;
+    font-size: 19px;
+}
+
+.titulo-horario {
+    margin-top: 10px;
+}
+
+
+/* responsivo */
+@media (max-width: 768px) {
+
+    .horarios-container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .horario-card {
+        height: auto;
+        padding: 1.5rem;
+        gap: 1.5rem;
+    }
+
+    .dia-card {
+        width: 70px;
+        min-width: 70px;
+        height: 120px;
+    }
+
+    .horario-info h3 {
+        font-size: 16px;
+    }
+
+    .horario-info p {
+        font-size: 12px;
+    }
+}

@@ -3,16 +3,30 @@
         "nome" : "Programando Inteligências Artificiais no LugoBots",
         "descricao" : "O LugoBots é uma plataforma online em que equipes de estudantes programam bots (robôs virtuais) que jogam partidas de futebol de forma totalmente autônoma. Cada bot é controlado por código, e a equipe deve definir sua lógica de movimentação, posicionamento, passes e finalizações.<br><br> A proposta é mostrar, de maneira prática e divertida, como conceitos aprendidos ao longo do curso (como programação, geometria analítica, vetores e álgebra linear) podem ser aplicados em problemas reais de tomada de decisão e inteligência artificial. Além de atrair o interesse dos visitantes com uma simulação envolvente, o experimento abre espaço para discussões sobre estratégia, lógica e ciência de dados, conectando teoria e prática em um ambiente lúdico.",
         "tematica" : ["Jogos", "Inteligência", "Artificial", "Robótica"],
-        "topicos" : "Programação e lógica de algoritmos, Geometria Analítica (posicionamento e direção de vetores), Álgebra Linear (operações com vetores)​,Inteligência Artificial (estratégias básicas de tomada de decisão), Física (velocidade, colisões e dinâmica de movimento), Cálculo (trajetórias e movimento)​",
-        "midia" : "https://lugobots.ai/", 
+        "topicos" : "Programação e lógica de algoritmos, Geometria Analítica (posicionamento e direção de vetores), Álgebra Linear (operações com vetores)​, Inteligência Artificial (estratégias básicas de tomada de decisão), Física (velocidade, colisões e dinâmica de movimento), Cálculo (trajetórias e movimento).​",
+        "midia": [
+            {
+            "nome": "Site oficial - LugoBots",
+            "url": "https://lugobots.ai/"
+            }
+        ],
         "responsaveis": ["Enzo Fernandes Sarmento", "Henrique Souza Brito", "Thiago Alcântara"]
     },
     {
         "nome": "Simulador de Cenário de Robô em indústrias 4D",
         "descricao": "O sistema visa ser um experimento prático onde é possível criar um espaço de tamanho NxN, posicionar um ponto inicial, ponto final e obstáculos, caso desejar. O sistema calcula automaticamente a rota mais eficiente partindo do ponto inicial até o final usando busca em profundidade e exibe a árvore binária correspondente ao caminho traçado pelo algoritmo de busca. Este visualizador se propõe a facilitar o entendimento nos estudos de algoritmos de IA.",
         "tematica":["Programação e Desenvolvimento","IA"],
-        "topicos": "programação e desenvolvimento em Java, Estrutura de dados (árvore binária de busca), Algoritmo de Busca em Profundidade (BFS),Técnicas de programação básicas em IA",
-        "midia": ["https://youtu.be/OtLHZk-HrA8?si=hIsek9atMC1Qh8nQ", "https://youtu.be/G-WdDeQ4TKw?si=PuHex81XemX2o9G6"],
+        "topicos": "Programação e desenvolvimento em Java, Estrutura de dados (árvore binária de busca), Algoritmo de Busca em Profundidade (BFS),Técnicas de programação básicas em IA.",
+        "midia": [
+            {
+            "nome": "Conheça um Centro de Distribuição Inteligente da Amazon",
+            "url": "https://youtu.be/OtLHZk-HrA8?si=hIsek9atMC1Qh8nQ"
+            },
+            {
+            "nome": "Robô móvel autônomo da Amazon",
+            "url": "https://youtu.be/G-WdDeQ4TKw?si=PuHex81XemX2o9G6"
+            }
+        ],
         "responsaveis": ["Thiago Souza Oliveira", "Otacílio Jośe Pereira"]
     },
     {
@@ -20,15 +34,33 @@
         "descricao": "Bom, o experimento consiste em diferentes jogos que eu fui desenvolvendo em diferentes plataformas para brincar um pouquinho com a computação enquanto exibo o potencial que ela tem. Por exemplo, eu estava programando um simples Jogo da Velha em Java, utilizando pacotes como JFrame para gerar a parte visual, só que ocorreu algo já no processo de finalização, eu esqueci de colocar a validação antes de um jogador selecionar um espaço, ou seja, o jogador que controla o X pode simplesmente colocar um X por cima de um O e “roubar” pra ganhar o jogo. Não foi proposital, mas eu achei tão engraçado que resolvi deixar como forma de “trollar” o pessoal que for no stand. <br><br>Tem também o “Jogo da Cobrinha”, esse eu fiz em GameMaker já, e ele é igualmente engraçado, eu fiz a configuração pra quando a cobra comer uma maçã, ela ganhar “um corpo a mais” e ficar maior né… Eu  só esqueci na hora de configurar da onde viria esse corpo, e acabou que quanto maior a cobra fica, mais de longe o “corpo extra” vem, então chega um ponto que tu tem que evitar bater em você mesmo enquanto desvia dos corpos voando, algo muito engraçado. Ambos os problemas tem uma solução super simples, mas eu achei interessante usar esses e outros protótipos que eu tenho aqui como exemplos de como podemos “mexer com as regras” quando estamos desenvolvendo algo. Acho que pro aluno de Ensino Médio vai ser algo bem legal de ver.",
         "tematica": ["Jogos e Educação"],
         "topicos": "Jogos, Orientação Objeto, Java, Gamificação",
-        "midia": ["https://youtu.be/bs1MbekUZdw?si=NodQoTSsYvDZMfRP","https://youtu.be/e6LrAGMlOWs?si=SY_oFBMIgd5lCFhQ"],
+        "midia": [
+            {
+            "nome": "Jogo da Cobrinha Torta - Youtube",
+            "url": "https://youtu.be/bs1MbekUZdw?si=NodQoTSsYvDZMfRP"
+            },
+            {
+            "nome": "Jogo da Velha do Mal - Youtube",
+            "url": "https://youtu.be/e6LrAGMlOWs?si=SY_oFBMIgd5lCFhQ"
+            }
+        ],
         "responsaveis":["Artur Rodrigues Santos"]
     },
     {
         "nome": "Ordenação de Barras enumeradas com o Bubble Sort",
         "descricao": "Este experimento apresenta o funcionamento do algoritmo de ordenação Bubble Sort, um dos métodos mais conhecidos e utilizados para introduzir conceitos de algoritmos e complexidade computacional. O experimento consiste em demonstrar como uma sequência de números desordenados é organizada passo a passo por meio de comparações e trocas consecutivas.<br><br> implementação desenvolvida, é possível visualizar de forma interativa o processo de ordenação, tornando mais clara a lógica envolvida e facilitando a compreensão do algoritmo. A proposta é despertar a curiosidade dos visitantes ao mostrar como algo aparentemente simples, como organizar números em ordem crescente, pode envolver técnicas computacionais importantes e aplicáveis em diversos contextos.",
-        "tematica": ["Programação e Desenvolvimento."],
-        "topicos": "- Algoritmos de Ordenação, Programação Web (HTML, CSS, JavaScript), Lógica de Programação",
-        "midia":["https://youtu.be/uQCxBPTgzbA?si=kVDsmI1gHr5UBj03", "paollagiselle.github.io/bubblesort"],
+        "tematica": ["Programação e Desenvolvimento"],
+        "topicos": "Algoritmos de Ordenação, Programação Web (HTML, CSS, JavaScript), Lógica de Programação",
+        "midia": [
+            {
+            "nome": "Bubble Sort - Youtube",
+            "url": "https://youtu.be/uQCxBPTgzbA?si=kVDsmI1gHr5UBj03"
+            },
+            {
+            "nome": "Github",
+            "url": "paollagiselle.github.io/bubblesort"
+            }
+        ],
         "responsaveis":["Paolla Giselle"]
     },
     {
@@ -36,7 +68,16 @@
         "descricao": "Carrinho eletrônico controlado a partir de uma placa Arduino e outros componentes. Primeiramente, foi feita uma simulação com a plataforma online Tinkercad, onde foram conectados 5 componentes eletrônicos entre si, uma placa Arduino, um acionador de motor L293D, uma bateria de 9V, e dois motores DC. Ademais, foi programada e testada toda a lógica do circuito nessa etapa. Após isso, pesquisas sobre a funcionalidade de uma ponte H L298N e ativação de motores foram feitas, entendendo como eles são ativados e controlados, e com isso, foi possível começar a montar o carro com estes mesmos componentes, que foram fornecidos por um professor previamente.<br> Nesse contexto, várias configurações de montagem foram testadas até encontrar a mais compacta, segura e organizada, e dessa forma, foi possível carregar o código para a placa Arduino, porém, o mesmo também precisou de diversos testes e modificações para executar os movimentos e lógicas corretamente. <br>Por fim, para poder ligar o carrinho fora de uma tomada, foram feitas pesquisas sobre baterias externas, e com a aquisição de duas, foi possível ligá-lo independente de fontes externas. Também foram feitas diversas tentativas empiricamente para ajustar a velocidade dos motores e definir suas rotações para a direita e a esquerda, sendo possível agora, configurar qualquer percurso simples para ele realizar.",
         "tematica": ["Robótica e programação"],
         "topicos": "Eletrônica, programação",
-        "midia":["https://drive.google.com/drive/folders/14LFTzvCuLbefQn3svvWWe0B5UWnVhebi?usp=sharing","https://youtu.be/9JuQ_CL-gH4"],
+        "midia": [
+            {
+            "nome": "Drive do projeto",
+            "url": "https://drive.google.com/drive/folders/14LFTzvCuLbefQn3svvWWe0B5UWnVhebi?usp=sharing"
+            },
+            {
+            "nome": "Carrinho feito com Arduino - Youtube",
+            "url": "https://youtu.be/9JuQ_CL-gH4"
+            }
+        ],
         "responsaveis":["Ronaldo Ribeiro Porto Filho","Yuri Thomaz dos Santos Carvalho" ,"Samuel Ferreira Santos"]
     },
     {
@@ -44,7 +85,7 @@
         "descricao": "Já imaginou ser um maestro da tecnologia, regendo suas músicas favoritas sem tocar em nada? Com o poder da Inteligência Artificial, isso se torna realidade!<br><br>Nosso experimento transforma sua mão no controle remoto definitivo. Através de uma câmera, um \"cérebro\" digital, treinado para reconhecer gestos, assiste aos seus movimentos. Feche o punho para pausar, levante o polegar para aumentar o volume ou deslize a mão no ar para trocar de faixa no Spotify.<br><br>Quer ir além? Desafie a IA e \"soletre\" o nome da sua banda favorita usando o alfabeto de Libras. O sistema irá decifrar suas mãos, buscar a música e tocá-la para você.<br><br>Não é mágica, é Ciência da Computação em ação. É a união entre a visão humana e a inteligência da máquina. Experimente o futuro da interação e mostre para a gente qual música você vai reger!",
         "tematica" : ["IA e Programação"],
         "topicos" : "Inteligência Artificial, mais especificamente Visão Computacional e Aprendizado de Máquina, para visualização e entendimento dos gestos. Também Lógica de Programação e Algoritmos para construção da conexão com a API.",
-        "midia" : [""],
+        "midia" : [],
         "responsaveis" :["Cauan Mendonça Valadão"," Náthalie Lima Bomfim "]
     }
     ,
@@ -53,7 +94,20 @@
         "descricao": "O experimento apresenta dois clássicos desafios da lógica e da computação: aTorre de Hanói e o Cubo Mágico. Ambos estimulam o raciocínio lógico, a análisedealgoritmos e a resolução de problemas — conceitos fundamentais na formaçãodeum cientista da computação. <br><br> A apresentação é voltada para alunos do ensino médio e temcomo objetivodespertar o interesse pela área da Computação, mostrando como o raciocínio lógicoe a criatividade podem ser aplicados na prática. <br><br>Na Torre de Hanói, o público verá como o pensamento recursivo ajuda a resolver umproblema passo a passo. Já no Cubo Mágico, os alunos conhecerão a aplicaçãodealgoritmos e padrões que levam à solução do quebra-cabeça. De forma interativa, será possível acompanhar os movimentos, compreender as estratégias e relacionar com o mundo da programação e da inteligência artificial.",
         "tematica" : ["Jogos e algoritmo"],
         "topicos" : "Lógica de Programação, Estruturas de Repetição, Algoritmos Recursivos,Inteligência Artificial, Resolução de Problemas, Pensamento Computacional, Matemática Discreta",
-        "midia" : ["https://youtu.be/Inm3Ie4aKI?si=RtDWXPa2M-xmiJtJ", "https://youtu.be/CLouA- TA6nc?si=3wjHRLaUGoszlPVG", "https://youtu.be/r9YguhkktOI?si=mozuMNKMpP-UcMGn"],
-        "responsaveis" :["Docente: Cesar Alberto Bravo Pariente", "Discentes: Caroline Almeida Paixão", "Gabriel Souza Santos", "AnaBeatriz Guerra Mello", "Pedro Henrique Gonçalves Freitas", "DalilaSantos Bonfim", "Maria Luiza OlivaSantos", "Nathan de Aguiar Costa", "Yuri Thomaz dos Santos Carvalho"]
+        "midia": [
+            {
+            "nome": "Youtube",
+            "url": "https://youtu.be/Inm3Ie4aKI?si=RtDWXPa2M-xmiJtJ"
+            },
+            {
+            "nome": "Youtube",
+            "url": "https://youtu.be/CLouA- TA6nc?si=3wjHRLaUGoszlPVG"
+            },
+            {
+            "nome": "Youtube",
+            "url": "https://youtu.be/r9YguhkktOI?si=mozuMNKMpP-UcMGn"
+            }
+        ],
+        "responsaveis" :["Docente: Cesar Alberto Bravo Pariente", "Discentes: Caroline Almeida Paixão", "Gabriel Souza Santos", "Ana Beatriz Guerra Mello", "Pedro Henrique Gonçalves Freitas", "Dalila Santos Bonfim", "Maria Luiza OlivaSantos", "Nathan de Aguiar Costa", "Yuri Thomaz dos Santos Carvalho"]
     }
 ]

@@ -1,234 +1,220 @@
-/* Estilização do Botão "Página Anterior" */
+/* Página de detalhes do experimento */
 
-.botao-paginaAnterior {
-    /* Layout e Alinhamento */
-    display: inline-flex; /* Usa flexbox para alinhar a seta e o texto facilmente */
-    align-items: center;  /* Centraliza verticalmente a seta com o texto */
-    
-    /* Aparência */
-    background-color: #f0f0f0; /* Um cinza bem claro de fundo */
-    color: #333; /* Cor do texto */
-    padding: 8px 16px; /* Espaçamento interno (vertical | horizontal) */
-    border-radius: 20px; /* Cantos bem arredondados para um visual moderno */
-    text-decoration: none; /* Remove o sublinhado padrão do link */
-    font-weight: 500; /* Peso da fonte */
-    font-size: 14px;
-    
-    /* Efeito de transição suave */
-    transition: background-color 0.2s ease-in-out, transform 0.2s ease;
-
-    /* Espaçamento para o conteúdo abaixo */
-    margin-bottom: 20px;
-}
-
-
-.botao-paginaAnterior:hover {
-    background-color: #e0e0e0; 
-    transform: translateY(-2px); 
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
-}
-
-/* Container Principal */
 .experimento-SaibaMais-container {
     min-height: 100vh;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-    padding: 2rem 0;
+    background: #fff;
+    padding: 48px 0 72px;
 }
 
-/* Seção de Detalhes do Experimento */
 .experimento-detalhes {
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    border: 1px solid #e1e8ed;
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 56px;
+    align-items: start;
 }
 
-/* Cabeçalho */
-.detalhes-cabecalho {
-    background: linear-gradient(0, var(--azulPrimario), var(--azulSecundario));
-    color: white;
-    padding: 2.5rem;
+
+/* Conteúdo principal */
+
+.project-main h1 {
+    font-size: 2.2rem;
+    margin: 14px 0 14px;
+    color: var(--azulPrimario);
 }
 
-.detalhes-cabecalho ul {
+.project-main .lead {
+    color: #667085;
+    font-size: 1.05rem;
+    margin-bottom: 32px;
+    max-width: 56ch;
+    text-align: justify;
+}
+
+.project-main h2 {
+    font-size: 1.25rem;
+    margin-bottom: 14px;
+    color: var(--azulPrimario);
+}
+
+.project-main p {
+    color: #667085;
+    margin: 0 0 16px;
+    max-width: 60ch;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+
+/* Texto pequeno acima do título */
+
+.eyebrow-text {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: var(--azulPrimario);
+    background: var(--brancoPrimario);
+    padding: 6px 12px;
+    border-radius: 999px;
+}
+
+
+/* Links úteis */
+
+.useful-links {
     list-style: none;
     padding: 0;
-    margin: 0 0 2rem 0;
+    margin: 28px 0 0;
+    border-top: 1px solid var(--border);
 }
 
-.detalhes-cabecalho li {
-    margin-bottom: 0.5rem;
+.useful-links li {
+    border-bottom: 1px solid var(--border);
 }
 
-.detalhes-cabecalho h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin: 0;
-    color: white;
-}
-
-.detalhes-cabecalho h3 {
-    font-size: 1.3rem;
-    font-weight: 400;
-    margin: 0;
-    color: #ecf0f1;
-    opacity: 0.9;
-}
-
-.detalhes-cabecalho h3:not(li h3) {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin: 1.5rem 0 0.5rem 0;
-    color: white;
-}
-
-.detalhes-cabecalho p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin: 0;
-    color: #ecf0f1;
-}
-
-/* Corpo do Conteúdo */
-.detalhes-corpo {
-    padding: 2.5rem;
-}
-
-/* Títulos das seções */
-.detalhes-corpo h2 {
-    font-size: 1.8rem;
+.useful-links a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 2px;
     font-weight: 600;
     color: var(--azulPrimario);
-    margin: 2rem 0 1rem 0;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid var(--azulSecundario);
-}
-
-.detalhes-corpo h2:first-child {
-    margin-top: 0;
-}
-
-/* Descrição */
-.detalhes-corpo .descricao + p {
-    font-size: 1.1rem;
-    line-height: 1.7;
-    color: var(--azulSecundario);
-    text-align: justify;
-    margin-bottom: 2rem;
-}
-
-/* Tópicos */
-.detalhes-corpo .topicos + p {
-    background: #f8f9fa;
-    padding: 1.5rem;
-    border-radius: 8px;
-    border-left: 4px solid var(--amareloPrimario);
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #2c3e50;
-    margin-bottom: 2rem;
-}
-
-/* Seção Visualize */
-.detalhes-corpo .visualiza {
-    color: var(--azulPrimario);
-    border-bottom-color: var(--azulSecundario);
-}
-
-/* Link da Mídia */
-.midia {
-    display: inline-block;
-    background: var(--verdeComplementar);
-    color: white;
     text-decoration: none;
-    padding: 1rem 2rem;
-    border-radius: 8px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(39, 174, 96, 0.3);
-    margin-top: 0.5rem;
-    margin-left: 15px;
+    transition: color 0.2s ease;
 }
 
-.midia:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(39, 174, 96, 0.4);
-    background: linear-gradient(135deg, var(--verdeComplementar), #27ae60);
+.useful-links a:hover {
+    color: #eaa900 !important;
 }
 
-.midia span {
-    color: white;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 1.2rem;
+.useful-links a:hover .link-label {
+    color: #eaa900 !important;
 }
-.midia p {
-    color: white;
+
+.useful-links a:hover .link-label svg {
+    stroke: #eaa900 !important;
+}
+
+.useful-links a:hover .link-arrow {
+    color: #eaa900 !important;
+}
+
+.link-label {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    font-size: 1.2rem;
+    gap: 10px;
+}
+
+.link-label svg {
+    width: 16px;
+    height: 16px;
+}
+
+
+/* Área lateral */
+
+.project-aside-block {
+    margin-top: 24px;
+    padding-top: 20px;
+}
+
+.project-aside-block h3 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+    color: var(--azulPrimario);
+}
+
+.project-aside-block h3 svg {
+    width: 17px;
+    height: 17px;
+    stroke: var(--gold);
+}
+
+
+/* Equipe */
+
+.team-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 0.95rem;
+    color: #1f2430;
+}
+
+
+/* Tags */
+
+.tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    background: var(--tag-bg);
+    border-radius: 999px;
+    padding: 6px 14px;
+    font-size: 0.82rem;
+    color: var(--azulPrimario);
+    font-weight: 500;
 }
 
 
 /* Responsividade */
+
 @media (max-width: 768px) {
+
     .experimento-SaibaMais-container {
-        padding: 1rem;
+        padding: 2rem 1.5rem;
     }
-    
+
+    .experimento-SaibaMais-container .container {
+        width: 100%;
+    }
+
     .experimento-detalhes {
-        border-radius: 8px;
+        grid-template-columns: 1fr;
+        gap: 40px;
     }
-    
-    .detalhes-cabecalho {
-        padding: 1.5rem;
-    }
-    
-    .detalhes-cabecalho h1 {
+
+    .project-main h1 {
         font-size: 2rem;
     }
-    
-    .detalhes-cabecalho h3 {
-        font-size: 1.1rem;
+
+    .project-main .lead {
+        font-size: 1rem;
     }
-    
-    .detalhes-corpo {
-        padding: 1.5rem;
-    }
-    
-    .detalhes-corpo h2 {
-        font-size: 1.5rem;
-    }
-    
-    .midia {
+
+    .project-aside {
         width: 100%;
-        text-align: center;
-        padding: 1rem;
     }
 }
 
+
 @media (max-width: 480px) {
-    .detalhes-cabecalho h1 {
+
+    .experimento-SaibaMais-container {
+        padding: 24px 20px 40px;
+    }
+
+    .project-main h1 {
         font-size: 1.7rem;
     }
-    
-    .detalhes-corpo {
-        padding: 1rem;
+
+    .project-main h2 {
+        font-size: 1.15rem;
     }
-    
-    .detalhes-corpo h2 {
-        font-size: 1.3rem;
-    }
-    
-    .detalhes-corpo .descricao + p,
-    .detalhes-corpo .topicos + p {
-        font-size: 1rem;
-        padding: 1rem;
+
+    .useful-links a {
+        padding: 12px 2px;
+        font-size: 0.9rem;
     }
 }

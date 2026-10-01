@@ -7,6 +7,10 @@
     --header: #b3bbfa;
     --white: #FFF;
     --p: #561f9d;
+    --border: #e5e7eb;
+    --tag-bg:#eef1fb;
+    --gold: #eaa900;
+    --azulBemVindo: #1b2a56;
 
     /* cores do colegiado */
     --azulPrimario : #283A73;
@@ -16,4 +20,6 @@
     --brancoPrimario: #E6EDFF;
     --brancoSecundario : #FBFBFB;
     --verdeComplementar : #419D78;
+
+    --cinzaEscuro: #1f2430;
 }

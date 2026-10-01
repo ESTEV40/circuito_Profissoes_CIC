@@ -1,83 +1,174 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/stylesheets/style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <title>Stand de CIC</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- header -->
-    <import path ="components/header.html"></import>
+    <import path="components/header.html"></import>
 
     <main>
-        <!-- bem vindos -->
-        <div class="bemvindo section-container" id="bemvindo">
-            <div class="text-content">
-                <h1>Bem-vindo, Visitante!</h1>
-                <p>Sejam muito bem-vindos à Universidade Estadual de Santa Cruz (<strong>UESC</strong>) e, em especial, ao nosso stand do curso de <strong>Ciência da Computação</strong>!</p>
-                <p>Esse é o site <b>OFICIAL</b> do nosso Stand! Feito por nossa equipe de estudantes engajados em acolhê-lo.</p>
-                <p>É um prazer imenso receber vocês, estudantes do ensino médio, aqui no nosso Campus para conhecer de perto as diversas áreas do conhecimento e, quem sabe, descobrir a profissão que vai transformar cada um de vocês.</p>
-                <p>Este é um momento para se inspirar nas oportunidades da educação pública e de qualidade. Em <strong>nosso stand</strong>, você descobrirá a Ciência da Computação como um curso que une <strong>programação, lógica, criatividade e inovação</strong> para formar profissionais capazes de criar as soluções tecnológicas que transformam nosso cotidiano.</p>
-                <br>
-            </div>
+      <!-- bem vindos -->
+      <div class="bemvindo section-container" id="bemvindo">
+        <div class="text-content">
+          <h1>Bem-vindo,<br />visitante!</h1>
+          <p>
+            Sejam muito bem-vindos à Universidade Estadual de Santa Cruz
+            (<strong>UESC</strong>) e, em especial, ao nosso stand do curso de
+            <strong> Ciência da Computação! </strong> Esse é o site
+            <strong>OFICIAL</strong> do nosso stand! Feito por nossa equipe de
+            estudantes engajados em acolhê-lo.
+          </p>
 
-            <div class="image-content">
-                <img src="./assets/uesc_campus3.jpeg" alt="Ilustração de tecnologia com elementos de programação e design">
-            </div>
+          <p>
+            É um prazer receber vocês! Conheça a Ciência da Computação, um curso
+            que une programação, lógica, criatividade e inovação para formar
+            profissionais capazes de desenvolver soluções que transformam nosso
+            cotidiano.
+          </p>
+
+          <a href="#experimentos" class="botao">Conheça os experimentos!</a>
         </div>
 
-        <!-- entidades -->
-        <div class="entidades section-container" id="entidades">
-            <div class="box-text">
-                <h2>Entidades Importantes</h2>
-                <p>O curso de Ciência da Computação tem algumas entidades importantes dentro da UESC</p>
+        <div class="image-content">
+          <img src="./assets/uesc_campus3.jpeg" alt="Foto do campus da UESC" />
+        </div>
+      </div>
+
+      <!-- dias e horários -->
+      <div class="dias-horarios">
+        <h2>Dias e Horários</h2>
+        <p>O stand fica aberto nos dois dias do evento!</p>
+
+        <div class="horarios-container">
+          <div class="horario-card">
+            <div class="dia-card">
+              <span>DIA 1</span>
             </div>
 
-            <div class="entidades-container">
-                <a href="https://www.uesc.br/proape/" target="_blank" rel="noopener noreferrer">
-                    <div class="entidade-card card1">
-                        <img src="./assets/proapelogo.png" alt="">
-                        <h3>PROAPE</h3>
-                        <p>Pró-Reitoria de Ações Afirmativas e Permanência Estudantil.</p>
-                    </div>
-                </a>
-
-                <a href="https://colcic.uesc.br/" target="_blank" rel="noopener noreferrer">
-                    <div class="entidade-card card2">
-                        <img src="./assets/Group 1 (1).png" alt="">
-                        <h3>COLCIC</h3>
-                        <p>Colegiado do curso de Ciência da Computação.</p>
-                    </div>
-                </a>
-
-                <a href="https://www.instagram.com/cacicuesc/" target="_blank" rel="noopener noreferrer">
-                    <div class="entidade-card card3">
-                        <img src="./assets/logocacic.jpeg" alt="">
-                        <h3>CACIC</h3>
-                        <p>Centro Acadêmico do curso de Ciência da Computação.</p>
-                    </div>
-                </a>
-
+            <div class="horario-info">
+              <p>Data</p>
+              <h3>01 de outubro</h3>
+              <p class="titulo-horario">Horários</p>
+              <h3>08h às 12h · 14h às 17h</h3>
             </div>
+          </div>
+
+          <div class="horario-card">
+            <div class="dia-card">
+              <span>DIA 2</span>
+            </div>
+
+            <div class="horario-info">
+              <p>Data</p>
+              <h3>02 de outubro</h3>
+              <p class="titulo-horario">Horários</p>
+              <h3>08h às 12h · 14h às 17h</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- experimentos -->
+      <section class="experimentos section-container" id="experimentos">
+        <h2>Nossos Experimentos</h2>
+
+        <p class="experimentos-intro">
+          Nessa seção você verá todos os nossos experimentos que preparamos para
+          você!
+        </p>
+
+        <div class="experimentos-carousel">
+          <button
+            class="carousel-btn anterior"
+            aria-label="Experimento anterior"
+          >
+            ‹
+          </button>
+
+          <div class="experimentos-viewport">
+            <div class="experimentos-container" id="experimentosContainer">
+              <!-- Os cards serão inseridos pelo JavaScript -->
+            </div>
+          </div>
+
+          <button class="carousel-btn proximo" aria-label="Próximo experimento">
+            ›
+          </button>
         </div>
 
-        <!-- experimentos -->
-        <section class="experimentos section-container" id="experimentos">
-            <h2>Nossos Experimentos</h2>
-            <p>Nessa seção você verá todos os nossos experimentos que preparamos para você!</p>
-            <div class="experimentos-grid" id="experimentosGrid">
-                <!-- Card grid InnerHTML -->
+        <div class="carousel-indicators" id="carouselIndicators">
+          <!-- Indicadores serão inseridos pelo JavaScript -->
         </div>
-        </section>
+      </section>
+
+      <!-- entidades -->
+      <div class="entidade" id="entidades">
+        <h2>Entidades Importantes</h2>
+        <p>
+          O curso de Ciência da Computação tem algumas entidades importantes
+          dentro da UESC!
+        </p>
+
+        <div class="entidade-container">
+          <a
+            href="https://www.uesc.br/proape/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="entidade-card">
+              <img src="./assets/logoproape.png" alt="" />
+              <div class="entidade-info">
+                <h3>PROAPE</h3>
+                <p>
+                  Pró-Reitoria de Ações Afirmativas e Permanência Estudantil.
+                </p>
+              </div>
+            </div>
+          </a>
+          <a
+            href="https://colcic.uesc.br/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="entidade-card">
+              <img src="./assets/logocolcic.png" alt="" />
+
+              <div class="entidade-info">
+                <h3>COLCIC</h3>
+                <p>Colegiado do curso de Ciência da Computação.</p>
+              </div>
+            </div>
+          </a>
+          <a
+            href="https://www.instagram.com/cacicuesc/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="entidade-card">
+              <img src="./assets/logocacic.png" alt="" />
+
+              <div class="entidade-info">
+                <h3>CACIC</h3>
+                <p>Centro Acadêmico do curso de Ciência da Computação.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
     </main>
 
     <import path="components/footer.html"></import>
-        
+
     <script src="./js/importcomponent.js"></script>
+    <script src="../js/header.js"></script>
     <script src="./js/experimentos.js"></script>
-    <script src=".js/experimentosSaibaMais"></script>
-</body>
+  </body>
 </html>
